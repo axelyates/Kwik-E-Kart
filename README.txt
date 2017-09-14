@@ -5,6 +5,7 @@ list of directories and -files:
 			- Meeting_Minutes.txt
 		Planning_Documents
 			- GROUP-INFO
+			- PertChart.png
 		Project_Reports
 			- deliverable1.docx
 		Source_Code

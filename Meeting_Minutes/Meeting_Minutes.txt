@@ -15,3 +15,8 @@ She had some interesting thoughts including UI, how we were going to handle back
 Set up next meeting for 9/22/17 to go over what we need to get done next
 
 9/22/2017 2:30 P.M - 4:00 P.M.
+Meteor troubleshooting. Design disscussion
+
+
+Paul Gerard 4-5:30 p.m.
+Reasearching packages, troubleshooting mongo.db, relearning bootstrap

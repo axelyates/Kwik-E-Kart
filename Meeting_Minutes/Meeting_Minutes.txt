@@ -1,10 +1,17 @@
 Paul Gerard and Axel Yates present at any mentioned meeting
-    1.    9/9/2017 12:00 P.M. - 2:00 P.M. 
+
+9/9/2017 12:00 P.M. - 2:00 P.M. 
 Topics discussed: Work on first deliverable and related information, general project planning related to end goal functionality, division of labor amongst group members, and the technology stack used for this project.    
-2.    9/12/2017
+
+9/12/2017
 Worked on presentation, created file directory for project. 
 Individual Work (outside meetings)
 Paul 9/12/2017 12:00 P.M.-2:20PM
 Editing Report, study course materials related to activity planning, and planning topics for discussion during meeting in and after class.
 
+9/21/2017
+Talked about what was brought up by Paivikki about our project
+She had some interesting thoughts including UI, how we were going to handle back end, and customers. It was very helpful
+Set up next meeting for 9/22/17 to go over what we need to get done next
 
+9/22/2017

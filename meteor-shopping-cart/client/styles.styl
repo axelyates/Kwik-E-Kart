@@ -1,0 +1,21 @@
+/* global */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* helpers */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

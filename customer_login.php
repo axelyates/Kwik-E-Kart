@@ -5,7 +5,7 @@ include("includes/db.php");
 	<form method="post" action=""> 
 		<table width="500" align="center" bgcolor="skyblue"> 
 			<tr align="center">
-				<td colspan="3"><h2>Login or Register to Buy!</h2></td>
+				<td colspan="3"><h2>Please Login or Register to Purchase Something</h2></td>
 			</tr>
 			<tr>
 				<td align="right"><b>Email:</b></td>
@@ -22,7 +22,7 @@ include("includes/db.php");
 				<td colspan="3"><input type="submit" name="login" value="Login" /></td>
 			</tr>
 		</table> 
-			<h2 style="float:right; padding-right:20px;"><a href="customer_register.php" style="text-decoration:none;">New? Register Here</a></h2>
+			<h2 style="float:right; padding-right:20px;"><a href="customer_register.php" style="text-decoration:none;">Register Here</a></h2>
 	</form>
 	<?php 
 		if(isset($_POST['login'])){		

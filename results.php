@@ -78,7 +78,6 @@ include("functions/functions.php");
 					}
 				?>
 			</div>
-			
 		</div>
 	</div>
 <!--Content wrapper ends-->	

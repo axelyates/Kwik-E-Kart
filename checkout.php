@@ -49,62 +49,36 @@ include("functions/functions.php");
 			</div>
 			<div id="content_area">
 				<?php cart(); ?>
-			<div id="shopping_cart"> 	
-				<span style="float:right; font-size:18px; padding:5px; line-height:40px;">	
+				<div id="shopping_cart"> 	
+					<span style="float:right; font-size:18px; padding:5px; line-height:40px;">	
 					<?php 
 					if(isset($_SESSION['customer_email'])){
-					echo "<b>Welcome:</b>" . $_SESSION['customer_email'] . "<b style='color:yellow;'>Your</b>" ;
+						echo "<b>Welcome:</b>" . $_SESSION['customer_email'] . "<b style='color:yellow;'>Your</b>" ;
 					}
 					else {
-					echo "<b>Welcome Guest:</b>";
+						echo "<b>Welcome Guest:</b>";
 					}
 					?>
-					
-					
-					<b style="color:yellow">Shopping Cart -</b> Total Items: <?php total_items();?> Total Price: <?php total_price(); ?> <a href="cart.php" style="color:yellow">Go to Cart</a>
-					
-					
-					
-					</span>
-			</div>
-			
-				<div id="products_box">
-				
-				<?php 
-				if(!isset($_SESSION['customer_email'])){
-					
-					include("customer_login.php");
-				}
-				else {
-				
-				include("payment.php");
-				
-				}
-				
-				?>
-				
+				<b style="color:yellow">Shopping Cart -</b> Total Items: <?php total_items();?> Total Price: <?php total_price(); ?> <a href="cart.php" style="color:yellow">Go to Cart</a>
+				</span>
 				</div>
-			
+				<div id="products_box">
+					<?php 
+						if(!isset($_SESSION['customer_email'])){
+							include("customer_login.php");
+						}
+						else {
+							include("payment.php");
+						}
+					?>
+				</div>
 			</div>
 		</div>
 		<!--Content wrapper ends-->
-		
-		
-		
 		<div id="footer">
-		
-		<h2 style="text-align:center; padding-top:30px;">&copy; 2014 by www.OnlineTuting.com</h2>
-		
+		<h2 style="text-align:center; padding-top:30px;">&copy; 2017 Kwik-E-Kart</h2>
 		</div>
-	
-	
-	
-	
-	
-	
 	</div> 
 <!--Main Container ends here-->
-
-
 </body>
 </html>

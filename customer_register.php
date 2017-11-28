@@ -61,23 +61,23 @@ include("includes/db.php");
 							<td colspan="6"><h2>Create an Account</h2></td>
 						</tr>
 						<tr>
-							<td align="right">Customer Name:</td>
+							<td align="right">Name:</td>
 							<td><input type="text" name="c_name" required/></td>
 						</tr>
 						<tr>
-							<td align="right">Customer Email:</td>
+							<td align="right">Email:</td>
 							<td><input type="text" name="c_email" required/></td>
 						</tr>
 						<tr>
-							<td align="right">Customer Password:</td>
+							<td align="right">Password:</td>
 							<td><input type="password" name="c_pass" required/></td>
 						</tr>
 						<tr>
-							<td align="right">Customer Image:</td>
+							<td align="right">Image:</td>
 							<td><input type="file" name="c_image" required/></td>
 						</tr>
 						<tr>
-							<td align="right">Customer Country:</td>
+							<td align="right">Country:</td>
 							<td>
 							<select name="c_country">
 								<option>Select a Country</option>
@@ -94,15 +94,15 @@ include("includes/db.php");
 							</td>
 						</tr>
 						<tr>
-							<td align="right">Customer City:</td>
+							<td align="right">City:</td>
 							<td><input type="text" name="c_city" required/></td>
 						</tr>
 						<tr>
-							<td align="right">Customer Contact:</td>
+							<td align="right">Contact:</td>
 							<td><input type="text" name="c_contact" required/></td>
 						</tr>
 						<tr>
-							<td align="right">Customer Address</td>
+							<td align="right">Address</td>
 							<td><input type="text" name="c_address" required/></td>
 						</tr>
 					<tr align="center">

@@ -29,16 +29,16 @@
 			$pro_image = $row_pro['product_image']; 
 			$pro_title = $row_pro['product_title'];
 	?>
-	<tr align="center">
-		<td><?php echo $i;?></td>
-		<td>
-		<?php echo $pro_title;?>
-		<img src="admin_area/product_images/<?php echo $pro_image;?>" width="50" height="50" />
-		</td>
-		<td><?php echo $qty;?></td>
-		<td><?php echo $invoice_no;?></td>
-		<td><?php echo $order_date;?></td>
-		<td><?php echo $status;?></td>
-	</tr>
+		<tr align="center">
+			<td><?php echo $i;?></td>
+			<td>
+			<?php echo $pro_title;?>
+			<img src="admin_area/product_images/<?php echo $pro_image;?>" width="50" height="50" />
+			</td>
+			<td><?php echo $qty;?></td>
+			<td><?php echo $invoice_no;?></td>
+			<td><?php echo $order_date;?></td>
+			<td><?php echo $status;?></td>
+		</tr>
 	<?php } ?>
 </table>

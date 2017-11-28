@@ -22,13 +22,13 @@ include("functions/functions.php");
 				<li><a href="index.php">Home</a></li>
 				<li><a href="all_products.php">All Products</a></li>
 				<li><a href="customer/my_account.php">My Account</a></li>
-				<li><a href="#">Sign Up</a></li>
+				<li><a href="customer_register.php">Sign Up</a></li>
 				<li><a href="cart.php">Shopping Cart</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 			<div id="form">
 				<form method="get" action="results.php" enctype="multipart/form-data">
-					<input type="text" name="user_query" placeholder="Search a Product"/ > 
+					<input type="text" name="user_query" placeholder="Search for a Product"/ > 
 					<input type="submit" name="search" value="Search" />
 				</form>
 			</div>
@@ -82,7 +82,7 @@ include("functions/functions.php");
 	</div>
 <!--Content wrapper ends-->	
 	<div id="footer">		
-	<h2 style="text-align:center; padding-top:30px;">&copy; 2017 Kwik-E-Kart</h2>
+	<h2 style="text-align:center; padding-top:30px;">&copy; Kwik-E-Kart 2017</h2>
 	</div>		
 </div> 
 <!--Main Container ends here-->

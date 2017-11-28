@@ -45,8 +45,8 @@
 <input type="hidden" name="quantity" value="<?php echo $qty; ?>">
 <input type="hidden" name="currency_code" value="USD">
 
-<input type="hidden" name="return" value="http://www.onlinetuting.com/myshop/paypal_success.php"/>
-<input type="hidden" name="cancel_return" value="http://www.onlinetuting.com/myshop/paypal_cancel.php"/>
+<input type="hidden" name="return" value="http://www.kwik-e-kart.com/onlineshop/paypal_success.php"/>
+<input type="hidden" name="cancel_return" value="http://www.kwik-e-kart.com/onlineshop/paypal_cancel.php"/>
 
 <!-- Display the payment button. -->
 <input type="image" name="submit" border="0"

@@ -25,13 +25,13 @@ include("functions/functions.php");
 				<li><a href="index.php">Home</a></li>
 				<li><a href="all_products.php">All Products</a></li>
 				<li><a href="customer/my_account.php">My Account</a></li>
-				<li><a href="#">Sign Up</a></li>
+				<li><a href="customer_register.php">Sign Up</a></li>
 				<li><a href="cart.php">Shopping Cart</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 			<div id="form">
 				<form method="get" action="results.php" enctype="multipart/form-data">
-					<input type="text" name="user_query" placeholder="Search a Product"/ > 
+					<input type="text" name="user_query" placeholder="Search for a Product"/ > 
 					<input type="submit" name="search" value="Search" />
 				</form>
 			</div>
@@ -42,7 +42,7 @@ include("functions/functions.php");
 			<div id="sidebar">
 				<div id="sidebar_title">Categories</div>
 				<ul id="cats">
-				<?php getCats(); ?>
+					<?php getCats(); ?>
 				<ul>
 				<div id="sidebar_title">Brands</div>
 				<ul id="cats">
@@ -52,7 +52,7 @@ include("functions/functions.php");
 			<div id="content_area">
 			<div id="shopping_cart"> 
 					<span style="float:right; font-size:18px; padding:5px; line-height:40px;">
-						Welcome Guest! <b style="color:yellow">Shopping Cart -</b> Total Items: Total Price: <a href="cart.php" style="color:yellow">Go to Cart</a>
+						Welcome Guest! <b style="color:yellow">Shopping Cart -</b> Total Items: <?php total_items(); ?> Total Price: <?php total_price(); ?> <a href="cart.php" style="color:yellow">Go to Cart</a>
 					</span>
 			</div>
 			
@@ -71,7 +71,7 @@ include("functions/functions.php");
 				<div id='single_product'>
 					<h3>$pro_title</h3>
 					<img src='admin_area/product_images/$pro_image' width='180' height='180' />
-					<p><b> $ $pro_price </b></p>
+					<p><b> Price: $$pro_price </b></p>
 					<a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
 					<a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>
 				</div>
@@ -83,7 +83,7 @@ include("functions/functions.php");
 		</div>
 		<!--Content wrapper ends-->
 		<div id="footer">
-		<h2 style="text-align:center; padding-top:30px;">&copy; 2017 Kwik-E-Kart</h2>
+		<h2 style="text-align:center; padding-top:30px;">&copy; Kwik-E-Kart 2017</h2>
 		</div>
 	</div> 
 <!--Main Container ends here-->

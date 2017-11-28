@@ -24,13 +24,13 @@ include("includes/db.php");
 				<li><a href="index.php">Home</a></li>
 				<li><a href="all_products.php">All Products</a></li>
 				<li><a href="customer/my_account.php">My Account</a></li>
-				<li><a href="#">Sign Up</a></li>
+				<li><a href="customer_register.php">Sign Up</a></li>
 				<li><a href="cart.php">Shopping Cart</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 			<div id="form">
 				<form method="get" action="results.php" enctype="multipart/form-data">
-					<input type="text" name="user_query" placeholder="Search a Product"/ > 
+					<input type="text" name="user_query" placeholder="Search for a Product"/ > 
 					<input type="submit" name="search" value="Search" />
 				</form>
 			</div>
@@ -60,7 +60,7 @@ include("includes/db.php");
 						echo "<b>Welcome Guest:</b>";
 					}
 					?>
-					<b style="color:yellow">Shopping Cart -</b> Total Items: <?php total_items(); ?> Total Price: <?php total_price(); ?> <a href="index.php" style="color:yellow">Back to Shop</a>
+					<b style="color:yellow">Shopping Cart -</b> Total Items: <?php total_items(); ?> Total Price: <?php total_price(); ?> <a href="index.php" style="color:yellow">Continue Shopping</a>
 					<?php 
 					if(!isset($_SESSION['customer_email'])){
 						echo "<a href='checkout.php' style='color:orange;'>Login</a>";
@@ -73,7 +73,7 @@ include("includes/db.php");
 			</div>
 			<div id="products_box">
 				<form action="" method="post" enctype="multipart/form-data">
-					<table align="center" width="700" bgcolor="skyblue">
+					<table align="center" width="700" bgcolor="white">
 						<tr align="center">
 							<th>Remove</th>
 							<th>Product</th>
@@ -151,7 +151,7 @@ include("includes/db.php");
 		</div>
 		<!--Content wrapper ends-->		
 		<div id="footer">
-		<h2 style="text-align:center; padding-top:30px;">&copy; 2017 Kwik-E-Kart</h2>
+		<h2 style="text-align:center; padding-top:30px;">&copy; Kwik-E-Kart 2017</h2>
 		</div>
 	</div> 
 <!--Main Container ends here-->

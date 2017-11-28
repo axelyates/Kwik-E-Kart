@@ -2,7 +2,6 @@
 <?php 
 session_start();
 include("functions/functions.php");
-
 ?>
 <html>
 	<head>
@@ -21,11 +20,11 @@ include("functions/functions.php");
 		<!--Navigation Bar starts-->
 		<div class="menubar">
 			<ul id="menu">
-				<li><a href="ecommerce/index.php">Home</a></li>
+				<li><a href="../index.php">Home</a></li>
 				<li><a href="../all_products.php">All Products</a></li>
-				<li><a href="customer/my_account.php">My Account</a></li>
+				<li><a href="../my_account.php">My Account</a></li>
 				<li><a href="#">Sign Up</a></li>
-				<li><a href="cart.php">Shopping Cart</a></li>
+				<li><a href="../cart.php">Shopping Cart</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 			<div id="form">
@@ -70,7 +69,7 @@ include("functions/functions.php");
 					if(!isset($_SESSION['customer_email'])){
 						echo "<a href='checkout.php' style='color:orange;'>Login</a>";
 					}
-					else {
+					else{
 						echo "<a href='logout.php' style='color:orange;'>Logout</a>";
 					}
 					?>

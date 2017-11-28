@@ -9,7 +9,6 @@
 			<td align="right"><b>Enter New Password:</b></td>
 			<td><input type="password" name="new_pass" required></td>
 		</tr>
-	
 		<tr>
 			<td align="right"><b>Enter New Password Again:</b></td>
 			<td><input type="password" name="new_pass_again" required></td>
@@ -34,7 +33,7 @@ include("includes/db.php");
 			exit();
 		}
 		if($new_pass!=$new_again){
-			echo "<script>alert('New password do not match!')</script>";
+			echo "<script>alert('New password does not match!')</script>";
 			exit();
 		}
 		else {

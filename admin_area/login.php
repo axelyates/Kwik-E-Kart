@@ -1,13 +1,12 @@
 <?php 
 session_start();
-
+include("includes/db.php"); 
 ?>
 <!DOCTYPE>
 <html>
 	<head>
 		<title>Login Form</title>
-<link rel="stylesheet" href="styles/login_style.css" media="all" /> 
-
+		<link rel="stylesheet" href="styles/login_style.css" media="all" /> 
 	</head>
 <body>
 <div class="login">
@@ -17,7 +16,7 @@ session_start();
 	
 	<h1>Admin Login</h1>
     <form method="post" action="login.php">
-    	<input type="text" name="email" placeholder="Eamil" required="required" />
+    	<input type="text" name="email" placeholder="Email" required="required" />
         <input type="password" name="password" placeholder="Password" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large" name="login">Login</button>
     </form>
@@ -27,46 +26,20 @@ session_start();
 </body>
 </html>
 <?php 
-
-include("includes/db.php"); 
-	
+	global $con;
+	include("includes/db.php"); 
 	if(isset($_POST['login'])){
-	
-		$email = mysql_real_escape_string($_POST['email']);
-		$pass = mysql_real_escape_string($_POST['password']);
-	
-	$sel_user = "select * from admins where user_email='$email' AND user_pass='$pass'";
-	
-	$run_user = mysqli_query($con, $sel_user); 
-	
-	 $check_user = mysqli_num_rows($run_user); 
-	
-	if($check_user==1){
-	
-	$_SESSION['user_email']=$email; 
-	
-	echo "<script>window.open('index.php?logged_in=You have successfully Logged in!','_self')</script>";
-	
+		$email = mysqli_real_escape_string($con, $_POST['email']);
+		$pass = mysqli_real_escape_string($con, $_POST['password']);
+		$sel_user = "select * from admins where user_email='$email' AND user_pass='$pass'";
+		$run_user = mysqli_query($con, $sel_user); 
+		$check_user = mysqli_num_rows($run_user); 
+		if($check_user==1){
+			$_SESSION['user_email']=$email; 
+			echo "<script>window.open('index.php?logged_in=You have successfully Logged in!','_self')</script>";
+		}
+		else{
+			echo "<script>alert('Password or Email is wrong, try again!')</script>";
+		}
 	}
-	else {
-	
-	echo "<script>alert('Password or Email is wrong, try again!')</script>";
-	
-	}
-	
-	
-	}
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
 ?>

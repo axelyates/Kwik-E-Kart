@@ -103,7 +103,7 @@ include("includes/db.php");
 					<td><?php echo $product_title; ?><br>
 					<img src="admin_area/product_images/<?php echo $product_image;?>" width="60" height="60"/>
 					</td>
-					<td><input type="text" size="4" name="qty" value="<?php echo $_SESSION['qty'];?>"/></td>
+					
 					<?php 
 						if(isset($_POST['update_cart'])){
 							$qty = $_POST['qty'];
@@ -113,6 +113,7 @@ include("includes/db.php");
 							$total = $total*$qty;
 						}
 					?>
+					<td><input type="text" size="4" name="qty" value="<?php echo $_SESSION['qty'];?>"/></td>
 					<td><?php echo "$" . $single_price; ?></td> <!-- this is for the item price -->
 				</tr>
 				<?php } } ?>
@@ -144,7 +145,7 @@ include("includes/db.php");
 			echo "<script>window.open('index.php','_self')</script>";
 		}
 	}
-	echo @$up_cart = updatecart();	
+	echo @$up_cart = updatecart();	//adds ability to remove from cart
 ?>
 				</div>
 			</div>

@@ -23,7 +23,6 @@ include("functions/functions.php");
 				<li><a href="../index.php">Home</a></li>
 				<li><a href="../all_products.php">All Products</a></li>
 				<li><a href="../my_account.php">My Account</a></li>
-				<li><a href="#">Sign Up</a></li>
 				<li><a href="../cart.php">Shopping Cart</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
@@ -105,7 +104,7 @@ include("functions/functions.php");
 		</div>
 		<!--Content wrapper ends-->
 		<div id="footer">
-		<h2 style="text-align:center; padding-top:30px;">&copy; 2017 Kwik-E-Kart</h2>
+		<h2 style="text-align:center; padding-top:30px;">&copy; Kwik-E-Kart 2017</h2>
 		</div>
 	</div> 
 <!--Main Container ends here-->

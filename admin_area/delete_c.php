@@ -8,5 +8,6 @@
 			echo "<script>alert('A customer has been deleted!')</script>";
 			echo "<script>window.open('index.php?view_customers','_self')</script>";
 		}
+	
 	}
 ?>
